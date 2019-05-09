@@ -1,0 +1,21 @@
+spring:
+  application:
+    name:ImoocMerchants
+  datasource:
+#    阿里云mysql
+    url: jdbc:mysql://rm-bp13jrn443i0a706oko.mysql.rds.aliyuncs.com:3306/passbook?autoReconnect=true
+    data-username: root
+    data-password: Khalil21497
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: passbook
+    listener:
+      concurrency: 4
+
+server:
+  port: 8080
+
+logging:
+  level: debug
+  file: imooc-merchants.log
