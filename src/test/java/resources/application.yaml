@@ -1,0 +1,29 @@
+spring:
+  application:
+    name:ImoocMerchants
+  datasource:
+#    阿里云mysql
+    url: jdbc:mysql://127.0.0.1:3307/passbook?useSSL=false&&allowPublicKeyRetrieval=true
+    username: ccf
+    password: 123456
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: passbook
+    listener:
+      concurrency: 4
+
+server:
+  port: 8080
+
+logging:
+  level: debug
+  file: imooc-merchants.log
+
+
+main:
+  allow-bean-definition-overriding: true
