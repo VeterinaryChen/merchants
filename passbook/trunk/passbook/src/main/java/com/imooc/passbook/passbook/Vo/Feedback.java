@@ -1,5 +1,6 @@
 package com.imooc.passbook.passbook.Vo;
 
+import com.google.protobuf.Enum;
 import com.imooc.passbook.passbook.Constant.FeedbackType;
 import lombok.AllArgsConstructor;
 import lombok.Data;

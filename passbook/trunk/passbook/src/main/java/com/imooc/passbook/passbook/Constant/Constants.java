@@ -157,13 +157,6 @@ public class Constants {
         public static final String BACKGROUND = "background";
 
         /**
-         * 功能描述: 优惠券是否有 token
-         * @auther: JeffChen
-         * @date: 2019/5/13 13:56
-         */
-        public static final String HAS_TOKEN = "has_token";
-
-        /**
          * 功能描述: 约束信息列族
          * @auther: JeffChen
          * @date: 2019/5/11 13:03
